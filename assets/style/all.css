@@ -1140,10 +1140,85 @@ a {
     .page li {
       font-size: 16px; } }
 
-.service-block {
-  padding: 20px;
-  border-radius: 30px;
-  width: 50%;
-  margin: 0 auto; }
+.service-content {
+  font-size: 20px;
+  position: relative; }
+  .service-content ul, .service-content p {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px dashed #763D3D;
+    -webkit-box-shadow: 2px 2px 2px #763D3D;
+            box-shadow: 2px 2px 2px #763D3D;
+    border-radius: 30px; }
+  .service-content .deco-sunset {
+    left: 0;
+    top: 150px; }
+    @media (max-width: 576px) {
+      .service-content .deco-sunset {
+        display: none; } }
+
+.deco-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  background-image: url(../images/deco-1.png);
+  background-size: cover; }
+  .deco-circle-1 {
+    top: -5px;
+    left: 50px; }
+  .deco-circle-2 {
+    top: 350px;
+    right: 100px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .deco-circle-3 {
+    top: 750px;
+    left: 120px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .deco-circle-4 {
+    top: 1150px;
+    right: 0px;
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg); }
+  @media (max-width: 767px) {
+    .deco-circle {
+      width: 100px;
+      height: 100px; } }
+
+.deco-arrow {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto; }
+
+.reserve-form {
+  margin: 0 auto;
+  text-align: center; }
+  .reserve-form label {
+    font-size: 20px;
+    margin-right: 8px; }
+  .reserve-form input, .reserve-form select, .reserve-form textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #EAEEEA;
+    border-color: transparent;
+    font-family: 'Noto Sans TC', sans-serif; }
+    @media (max-width: 992px) {
+      .reserve-form input, .reserve-form select, .reserve-form textarea {
+        width: 60%; } }
+  .reserve-form button {
+    font-size: 18px;
+    letter-spacing: 10px;
+    font-family: 'Noto Sans TC', sans-serif; }
+  .reserve-form div {
+    margin-top: 32px; }
 
 /*# sourceMappingURL=all.css.map */

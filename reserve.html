@@ -58,7 +58,7 @@
                 <label for="contactTime">聯繫時間
                 </label>
                 <select name="contactTime" id="contactTime">
-                    <option value="">請選擇聯繫時段</option>
+                    <option value="">請選擇聯繫時段(平日)</option>
                     <option value="09:00am~12:00pm">09:00am~12:00pm</option>
                     <option value="13:00pm~17:00pm">13:00pm~17:00pm</option>
                     <option value="19:00pm~21:00pm">19:00pm~21:00pm</option>
@@ -68,12 +68,12 @@
                 </label>
                 <input type="email" id="mail" name="mail" required><br>
 
-                <label for="country">縣　　市
-                </label>
-                <input type="text" id="country" name="country"><br>
-                <label for="area">地　　區
-                </label>
-                <input type="text" id="area" name="area"><br>
+
+                <div id="zipselect">
+                    <div data-role="county" class="countrySelect" name="county" id="county">縣　　市</div>
+                    <div data-role="district" class="areaSelect" name="district" id="district">地　　區</div>
+                </div>
+
                 <label for="budget">預　　算
                 </label>
                 <input type="text" id="budget" name="budget" required><br>
@@ -102,24 +102,40 @@
                 </label>
                 <input type="text" id="other" name="other">
                 <br>
-                <button type="submit" class="main-btn" id="submit" name="submit">送出表單<i class="bi bi-chevron-right"></i></button>
+                <button type="submit" class="main-btn" id="submit" name="submit">送出表單<i
+                        class="bi bi-chevron-right"></i></button>
             </form>
         </div>
     </div>
 
 </main>
 
- <script type="text/javascript">
-    const scriptURL='https://script.google.com/macros/s/AKfycbxXzNTSpYc7OowA1O--56blCqTskOqRfqNUdgoJmAsUJK7UnR7uGQC3M3VuHgJgCaGB/exec';
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://code.essoduke.org/js/twzipcode/twzipcode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.15-rc1/jquery.twzipcode.js"></script>
+<script>
+    //縣市鄉鎮套件
+
+    $("#zipselect").twzipcode({
+        css: ["countrySelect", "areaSelect"],
+        zipcodeIntoDistrict: true
+    });
+
+
+    // 表單連結google sheet
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXzNTSpYc7OowA1O--56blCqTskOqRfqNUdgoJmAsUJK7UnR7uGQC3M3VuHgJgCaGB/exec';
 
     const form = document.forms['google']
-          
-          form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-              .then(response => alert("預約成功！"))
-              .catch(error => console.error('Error!', error.message))
-          })
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => alert("Sollys已收到您的預約資訊，設計師將盡快與您聯繫^^！"))
+            .then(form.reset())
+            .catch(error => console.error('Error!', error.message))
+    })
 </script>
 
     <footer class="footer">

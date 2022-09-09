@@ -1,0 +1,146 @@
+.section{
+    padding: 48px;
+    @include pad{
+        padding: 24px;
+    }
+    @include mobile{
+        padding: 16px;
+    }
+}
+.h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+    span{
+        padding-bottom: 8px;
+        border-bottom: 1px solid $main-color;
+    }
+}
+.article-list{
+    display: flex;
+    position: relative;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 4px dashed rgba(181,61,61,0.3);
+    &:last-child{
+        border-bottom:none;
+    }
+    @include pad{
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+    @include mobile{
+        display: block;
+    }
+}
+.article-img{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 24px;
+    max-width: 50%;
+    @include mobile{
+        margin: 0 0 8px;
+        display: block;
+        max-width: 100%;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.list-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    h3{
+        font-size: 32px;
+        color: $main-color;
+        margin-bottom: 8px;
+    }
+    span{
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    p{
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    div{
+        margin-top: auto;
+        text-align: end;
+    }
+    a{
+        text-align: right;
+    }
+    @include pad{
+        padding: 15px 0px;
+        h3{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+            
+        }
+        span{
+            margin-bottom: 8px;
+        }
+    }
+    @include mobile{
+        padding: 0;
+        width: 100%;
+        p{
+            display: none;
+        }
+    }
+}
+.red-btn{
+    font-size: 36px;
+    font-weight: 900;
+    color: $dark-red;
+
+    margin-top: auto;
+    &:hover{
+        letter-spacing: 3px;
+    }
+    @include pad{
+        font-size: 20px;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+.page{
+    display: flex;
+    justify-content: center;
+    li{
+        border: 1px solid $main-color;
+        border-right:none;
+        font-size: 18px;
+        &:last-child{
+            border-right:1px solid $main-color;
+        }
+    }
+    a{
+        display: block;
+        color: $main-color;
+        padding: 8px 16px;
+        &.active{
+            background-color: $main-color;
+            color: #fff;
+        }
+        &:hover{
+            background-color:$main-color;
+            color: #fff;
+        }
+    }
+    @include mobile{
+        li{
+            font-size: 16px;
+        }
+    }
+}

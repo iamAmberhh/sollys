@@ -1,0 +1,101 @@
+.service-content{
+    font-size: 20px;
+    position: relative;
+    ul,p{
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px dashed $dark-red;
+        box-shadow: 2px 2px 2px $dark-red;
+        border-radius: 30px;
+        background-color: #F7F6F2;
+    }
+    li{
+        &:last-child{
+            margin:32px auto;
+            text-align: center;
+        }
+    }
+    .deco-sunset{
+        left:0;
+        top:150px;
+        @include mini-mobile{
+            display: none;
+        }
+    }
+    i{
+        vertical-align: bottom;
+    }
+}
+.deco-circle{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index:-1;
+    background-image: url(../images/deco-1.png);
+    background-size: cover;
+    &-1{
+        top:-5px;
+        left:50px;
+    }
+    &-2{
+        top:350px;
+        right:100px;
+        transform: rotate(90deg);
+    }
+    &-3{
+        top:750px;
+        left:120px;
+        transform: rotate(180deg);
+    }
+    &-4{
+        top:1150px;
+        right:0px;
+        transform: rotate(270deg);
+    }
+    @include mobile{
+        width: 200px;
+        height: 200px;
+    }
+    @include mini-mobile{
+        display: none;
+    }
+    
+}
+.deco-arrow{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
+@keyframes move-sunset{
+    0%{
+      top:25px;
+      left:0;
+    }
+    25%{
+      top:-5px;
+      left:30px;
+    }
+    50%{
+      left:200px;
+      top:30px;
+    }
+    75%{
+      top:0px;
+      left:200px;
+    }
+    100%{
+      top:25px;
+      left:0;
+    }
+  }
+.move-sunset{
+    animation-name: move-sunset;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: both; 
+    @include pad{
+        animation: none;
+    }
+}

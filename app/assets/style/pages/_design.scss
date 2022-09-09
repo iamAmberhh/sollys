@@ -1,0 +1,79 @@
+.design-list{
+    display: flex;
+    justify-content: center;
+    margin:48px 0;
+    li{
+        margin-right: 16px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    a{
+        display: block;
+    }
+    @include mobile{
+        a{
+            letter-spacing: 3px;
+            padding: 10px 20px;
+        }
+    }
+    @include mini-mobile{
+        a{
+            padding: 10px 10px;
+        }
+    }
+   
+}
+.card{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+.design-img{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center center;
+    background-size: cover;
+    padding:48px;
+    transition: all 1s ease;
+    &-1{
+        background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%) ,url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg);
+        @include pad{
+            background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%) ,url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg);
+        }
+        @include mini-mobile{
+            background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%) ,url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg);
+        }
+    }
+    &-2{
+        background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%) ,url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg);
+        @include pad{
+            background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%) ,url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg);
+        }
+        @include mini-mobile{
+            background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%) ,url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg);
+        }
+    }
+    &-3{
+        background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%) ,url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg);
+        @include pad{
+            background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%) ,url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg);
+        }
+        @include mini-mobile{
+            background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%) ,url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg);
+        }
+    }
+    h3{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    li{
+        margin-bottom: 12px;
+    }
+    div{
+        display: flex;
+    }
+}

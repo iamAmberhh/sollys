@@ -1,0 +1,82 @@
+.article{
+    display: flex;
+    &-main{
+        width: 70%;
+        margin-right: 2%;
+    }
+    &-aside{
+        width: 28%;
+    }
+    @include pad{
+        display: block;
+        &-main{
+            width: 100%;
+        }
+        &-aside{
+            display: none;
+        }
+    }
+}
+
+.article-title-img{
+    max-width:800px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+.article-main{
+    h3{
+        font-size: 32px;
+        font-weight: bold;
+        color:$dark-red;
+        border-left: 5px solid $dark-red;
+        padding-left: 12px;
+        margin-bottom: 32px;
+        @include mobile{
+            font-size: 24px;
+        }
+    }
+    p{
+        margin-bottom: 32px;
+        font-size:20px;
+    }
+    div{
+        display: flex;
+        justify-content: end;
+    }
+    img{
+        margin-bottom: 32px;
+        border-radius: 30px;
+    }
+}
+.article-aside{
+    margin-top: 300px;
+    h3{
+        font-size: 24px;
+        margin-bottom: 48px;
+    }
+    a{
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 24px;
+        border-radius: 15px;
+        &:hover{
+            color:white;
+            background: $dark-red;
+            opacity: 0.8;
+        }
+    }
+}
+
+.aside-img-1{
+    background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%) ,url(../images/nathan-fertig-FBXuXp57eM0-unsplash.jpg);
+}
+
+.aside-img-2{
+    background-image:linear-gradient(105deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%) ,url(../images/r-architecture-TRCJ-87Yoh0-unsplash.jpg);
+}

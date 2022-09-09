@@ -1,0 +1,35 @@
+.reserve-form{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    label{
+        font-size: 20px;
+        margin-right: 8px;
+    }
+    input,select,textarea{
+        width: 40%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        outline: none;
+        background-color: $light-gray;
+        border-color:transparent;
+        font-family:'Noto Sans TC', sans-serif;
+        @include pad{
+            width: 60%;
+        }
+    }
+    button{
+        font-size: 18px;
+        letter-spacing: 10px;
+        font-family:'Noto Sans TC', sans-serif;
+    }
+}
+.countrySelect, .areaSelect{
+    font-size: 20px;
+    select{
+        margin-left: 8px;
+    }
+    
+}

@@ -9,10 +9,10 @@ current: index
 <section class="banner">
   <img src="assets/images/spacejoy-808a4AWu8jE-unsplash.jpeg" alt="banner" class="banner-img">
   <div class="banner-content">
-    <img src="assets/images/mountain.jpg" alt="icon">
-    <h1 class="segoe">SOLLYS</h1>
-    <h2><span>把丹麥的陽光</span></h2>
-    <h2><span>帶進你家</span></h2>
+    <img src="assets/images/mountain.jpg" alt="icon" data-aos="fade-right">
+    <h1 class="segoe" data-aos="fade-left">SOLLYS</h1>
+    <h2 data-aos="fade-down"><span>把丹麥的陽光</span></h2>
+    <h2 data-aos="fade-up"><span>帶進你家</span></h2>
   </div>
 </section>
 
@@ -20,7 +20,7 @@ current: index
 
   <section class="dream-house">
     <img src="assets/images/spacejoy-KSfe2Z4REEM-unsplash.jpeg" alt="picture">
-    <div class="dream-house-content">
+    <div class="dream-house-content" data-aos="fade-up" data-aos-delay="300">
       <span class="segoe">CONCEPT</span>
       <h2>
         <span>你理想中的家</span>
@@ -35,8 +35,8 @@ current: index
 
   <section class="about-sollys">
     <div class="deco-block">
-    </div> 
-    <div class="about-content">
+    </div>
+    <div class="about-content" data-aos="fade-up" data-aos-delay="300">
       <img src="assets/images/sunset.png" alt="picture" class="deco-sunset">
       <span class="segoe">ABOUT SOLLYS</span>
       <h2>
@@ -47,7 +47,7 @@ current: index
       </h2>
       <p>Sollys取自丹麥文，是「陽光」之意，丹麥是全球最快樂的國家，因此，工作室的宗旨，就是想把快樂聖地丹麥的陽光帶進每個屋主的家。</p>
     </div>
-    
+
   </section>
 
   <section class="project">
@@ -56,41 +56,40 @@ current: index
       <span>設計案例</span>
     </h2>
     <ul class="project-list">
+      <li><a href="design-detail.html">
+          <div><img src="assets/images/adam-winger-abzqM4wzlnI-unsplash.jpeg" alt="picture"></div>
+          <p>熱愛工業風的<br>貓奴一家三口</p>
+        </a></li>
       <li><a href="#">
-        <div><img src="assets/images/adam-winger-abzqM4wzlnI-unsplash.jpeg" alt="picture"></div>
-        
-        <p><i class="bi bi-house-fill"></i>熱愛工業風的貓奴一家三口</p>
-      </a></li>
+          <div>
+            <img src="assets/images/spacejoy-3z_61bnbFhM-unsplash.jpeg" alt="picture">
+          </div>
+          <p>小資族的夢想<br>老屋內的書房</p>
+        </a></li>
       <li><a href="#">
-        <div>
-          <img src="assets/images/spacejoy-3z_61bnbFhM-unsplash.jpeg" alt="picture">
-        </div>
-        <p><i class="bi bi-house-fill"></i>老屋改造小資族也能有書房</p>
-      </a></li>
-      <li><a href="#">
-        <div>
-          <img src="assets/images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg" alt="picture">
-        </div>
-        <p><i class="bi bi-house-fill"></i>極簡主義者的日系無印小宅</p>
-      </a></li>
+          <div>
+            <img src="assets/images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg" alt="picture">
+          </div>
+          <p>極簡主義者的<br>日系無印小宅</p>
+        </a></li>
     </ul>
     <div>
-      <a href="#" class="project-bottom">了解更多<i class="bi bi-chevron-right"></i></a>
+      <a href="design.html" class="main-btn">了解更多<i class="bi bi-chevron-right"></i></a>
     </div>
-    
+
   </section>
 </main>
 
 <section class="class">
-<div>
-  <h2>裝修學堂</h2>
-  <p>裝修攻略x舒適生活</p>
-  <a href="reserve.html" class="class-btn">線上諮詢</a>
-</div>
+  <div data-aos="fade-right">
+    <h2><a href="article-list.html" class="article-list-btn">裝修學堂</a></h2>
+    <p>裝修攻略x舒適生活</p>
+    <a href="reserve.html" class="class-btn" data-aos="fade-up-right">線上諮詢</a>
+  </div>
 </section>
 
 <section class="container customer">
-  
+
   <div class="customer-title">
     <img src="assets/images/sun-1.png" alt="img" class="deco-sun">
     <span class="segoe">EVALUTIONS</span>
@@ -100,27 +99,65 @@ current: index
     <img src="assets/images/andrea-davis-4oapbWR-8ZI-unsplash.jpeg" alt="picture" class="customer-img">
   </div>
   <div class="customer-content">
-    <ul>
-      <li class="feedback-card">
-        <div class="card-content">
-          <img src="assets/images/upper.svg" alt="deco">
-          <p>Sollys的服務很棒，會細心了解我們的需求，也會給予很專業的裝潢建議，裝修期間設計師主動拍照並且告知我們目前的進度，讓我們很安心！
-          </p>
-          <span>蘆洲張先生</span>
-          <img src="assets/images/lower.svg" alt="deco" class="lower-tab">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <div class="card-content">
+              <img src="assets/images/upper.svg" alt="deco">
+              <p>Sollys的服務很棒，會細心了解我們的需求，也會給予很專業的裝潢建議，裝修期間設計師主動拍照並且告知我們目前的進度，讓我們很安心！
+              </p>
+              <span>蘆洲張先生</span>
+              <img src="assets/images/lower.svg" alt="deco" class="lower-tab">
+            </div>
+            <img src="assets/images/kelly-sikkema-hS_eGxLjozs-unsplash.jpg" alt="customer" class="customer-headshot">
+          </div>
         </div>
-        <img src="assets/images/kelly-sikkema-hS_eGxLjozs-unsplash.jpg" alt="customer" class="customer-headshot">
-      </li>
-      <li class="feedback-card">
-        <div class="card-content">
-          <img src="assets/images/upper.svg" alt="deco">
-          <p>設計師很用心，一開始不知道要選擇 什麼風格進行裝修，她提供很多參考 範例，結合她過去的經驗，幫我們打 造了一個很舒適的家，非常推薦！
-          </p>
-          <span>中和盧小姐</span>
-          <img src="assets/images/lower.svg" alt="deco" class="lower-tab">
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <div class="card-content">
+              <img src="assets/images/upper.svg" alt="deco">
+              <p>設計師很用心，一開始不知道要選擇什麼風格進行裝修，她提供很多參考範例，結合她過去的經驗，幫我們打造了一個很舒適的家，非常推薦！
+              </p>
+              <span>中和盧小姐</span>
+              <img src="assets/images/lower.svg" alt="deco" class="lower-tab">
+            </div>
+            <img src="assets/images/robin-li-miWnpmJryT8-unsplash.jpeg" alt="customer" class="customer-headshot">
+          </div>
         </div>
-        <img src="assets/images/robin-li-miWnpmJryT8-unsplash.jpeg" alt="customer" class="customer-headshot">
-      </li>
-    </ul>
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <div class="card-content">
+              <img src="assets/images/upper.svg" alt="deco">
+              <p>很喜歡Sollys的設計，會很仔細地跟我們討論需求、安排動線。
+              </p>
+              <span>新莊江小姐</span>
+              <img src="assets/images/lower.svg" alt="deco" class="lower-tab">
+            </div>
+            <img src="assets/images/ionut-comanici-RDcEWH5hSDE-unsplash.jpg" alt="customer" class="customer-headshot">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween:20,
+    autoplay: {
+    delay: 3000,
+    },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+</script>

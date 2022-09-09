@@ -1,9 +1,13 @@
 @import "./reset";
 @import "./variables";
-@import "./layout";
+@import "./mixin";
 
+
+@import "./layout";
 @import "pages/index";
 @import "pages/design";
+@import "pages/design-detail";
 @import "pages/article";
+@import "pages/article-detail";
 @import "pages/service";
 @import "pages/reverse";

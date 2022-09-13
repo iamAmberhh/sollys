@@ -500,7 +500,7 @@ a {
   width: 30%;
   margin-right: 12%;
   position: relative;
-  background-image: url(../images/marina-podrez-l62-amh_QEs-unsplash.jpeg);
+  background-image: url(../images/about-img.jpeg);
   height: 600px;
   background-position: center;
   background-size: cover; }
@@ -550,7 +550,9 @@ a {
   margin: 0 -12px; }
   .project-list li {
     width: 31%;
-    margin: 0 12px 24px; }
+    margin: 0 12px 24px;
+    -webkit-box-shadow: 0px 0px 5px #4F4F51;
+            box-shadow: 0px 0px 5px #4F4F51; }
   .project-list p {
     background-color: #fff;
     font-size: 22px;
@@ -560,9 +562,6 @@ a {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-  .project-list span {
-    color: #763D3D;
-    margin-right: 15px; }
   .project-list div {
     overflow: hidden;
     height: 280px; }
@@ -618,7 +617,7 @@ a {
 
 .class {
   font-family: "Microsoft JhengHei","微軟正黑體",sans-serif;
-  background-image: url(../images/spacejoy-YI2YkyaREHk-unsplash.jpeg);
+  background-image: url(../images/banner02.jpeg);
   height: 715px;
   background-size: cover;
   background-position: center;
@@ -849,38 +848,38 @@ a {
   -o-transition: all 1s ease;
   transition: all 1s ease; }
   .design-img-1 {
-    background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg);
-    background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg); }
+    background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/project-img01.jpeg);
+    background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/project-img01.jpeg); }
     @media (max-width: 992px) {
       .design-img-1 {
-        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg);
-        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg); } }
+        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/project-img01.jpeg);
+        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/project-img01.jpeg); } }
     @media (max-width: 576px) {
       .design-img-1 {
-        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg);
-        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/adam-winger-abzqM4wzlnI-unsplash.jpeg); } }
+        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/project-img01.jpeg);
+        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/project-img01.jpeg); } }
   .design-img-2 {
-    background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg);
-    background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg); }
+    background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/project-img02.jpeg);
+    background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/project-img02.jpeg); }
     @media (max-width: 992px) {
       .design-img-2 {
-        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg);
-        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg); } }
+        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/project-img02.jpeg);
+        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/project-img02.jpeg); } }
     @media (max-width: 576px) {
       .design-img-2 {
-        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg);
-        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/spacejoy-3z_61bnbFhM-unsplash.jpeg); } }
+        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/project-img02.jpeg);
+        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/project-img02.jpeg); } }
   .design-img-3 {
-    background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg);
-    background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg); }
+    background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/project-img03.jpeg);
+    background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 45%, transparent 40%), url(../images/project-img03.jpeg); }
     @media (max-width: 992px) {
       .design-img-3 {
-        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg);
-        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg); } }
+        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/project-img03.jpeg);
+        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 60%, transparent 20%), url(../images/project-img03.jpeg); } }
     @media (max-width: 576px) {
       .design-img-3 {
-        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg);
-        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpeg); } }
+        background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/project-img03.jpeg);
+        background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.9) 100%, transparent 20%), url(../images/project-img03.jpeg); } }
   .design-img h3 {
     font-size: 32px;
     font-weight: bold;
@@ -946,12 +945,26 @@ a {
       display: block; } }
 
 .design-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  z-index: 10;
   width: 30%;
   max-height: 500px;
   margin-right: 32px;
   background-color: #EAEEEA;
-  padding: 24px 48px;
-  border-radius: 24px 54px 24px 54px; }
+  padding: 48px;
+  border-radius: 24px 54px 24px 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .design-sidebar h3 {
     text-align: center;
     font-size: 24px;
@@ -971,9 +984,11 @@ a {
             box-shadow: 0px 0px 3px rgba(33, 36, 38, 0.6); }
   @media (max-width: 992px) {
     .design-sidebar {
-      margin-right: 0;
+      margin: 0 auto;
       margin-bottom: 32px;
-      width: 100%; } }
+      width: 80%;
+      position: inherit;
+      padding: 24px; } }
   @media (max-width: 576px) {
     .design-sidebar {
       max-height: 1500px; } }
@@ -1233,12 +1248,12 @@ a {
       opacity: 0.8; }
 
 .aside-img-1 {
-  background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/nathan-fertig-FBXuXp57eM0-unsplash.jpg);
-  background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/nathan-fertig-FBXuXp57eM0-unsplash.jpg); }
+  background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/article-list02.jpg);
+  background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/article-list02.jpg); }
 
 .aside-img-2 {
-  background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/r-architecture-TRCJ-87Yoh0-unsplash.jpg);
-  background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/r-architecture-TRCJ-87Yoh0-unsplash.jpg); }
+  background-image: -o-linear-gradient(345deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/article-list03.jpg);
+  background-image: linear-gradient(105deg, rgba(234, 234, 234, 0.7) 100%, transparent 20%), url(../images/article-list03.jpg); }
 
 .service-content {
   font-size: 20px;

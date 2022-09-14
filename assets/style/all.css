@@ -70,8 +70,7 @@ body {
   font-weight: 500;
   background: #F7F6F2;
   color: #4F4F51;
-  font-size: 18px;
-  overflow-x: hidden; }
+  font-size: 18px; }
 
 a {
   color: #4F4F51; }
@@ -1261,6 +1260,7 @@ a {
 
 .service-content {
   font-size: 20px;
+  overflow: hidden;
   position: relative; }
   .service-content ul, .service-content p {
     max-width: 380px;

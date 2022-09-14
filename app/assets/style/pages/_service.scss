@@ -95,7 +95,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite; 
     animation-fill-mode: both; 
-    @include pad{
+    @media (max-width:1200px) {
         animation: none;
     }
 }

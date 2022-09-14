@@ -8,6 +8,7 @@ body{
     background: #F7F6F2;
     color:$main-color;
     font-size: 18px;
+    overflow-x: hidden;
 }
 a{
     color:$main-color;
@@ -16,13 +17,6 @@ a{
     font-family: 'Segoe UI', sans-serif;
     font-weight: 300;
 }
-// .header{
-//     position: sticky;
-//     top:0;
-//     left:0;
-//     background: #F7F6F2;
-//     z-index:10;
-// }
 
 .container{
     max-width: 1530px;
